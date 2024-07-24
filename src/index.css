@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+#root {
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+:root {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+*{
+  color: #161616;
+  --color-primary: #1c232d;
+  --color-secondary: aquamarine;
+  --color-bg: #161b21;
+  --color-section: #1c232d;
+  --color-table-head: #071222;
+  --color-table-alternate: #151e2a;
+  --color-border: #e1e1e1;
+  --border-radius: 8px;
+  --color-shadow: #2e3444;
+  --color-text: whitesmoke;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+.chart-c .recharts-legend-wrapper {
+  bottom: 30% !important;
+  max-width: 90% !important;
+  margin: 0px auto !important;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row-s{
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
 }
