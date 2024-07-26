@@ -231,6 +231,7 @@ function App() {
   return (
     <div className="App">
       <h1>Real-time Data</h1>
+      <div style={{ color: "red"}}>*After running the backend you must click the button "Start Socket" to see the live data. The socket broadcast will end after 100 data generation.</div>
       <div className="btn-div top">
         {btn("Start Socket", "btn-start")}
         {btn("End Socket", "btn-end")}
